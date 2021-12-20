@@ -1,0 +1,45 @@
+@media only screen and (min-width: 50em) {
+
+    body {
+        max-width: 80%;
+        margin: 3em auto;
+        border: none;
+    }
+
+    .logo picture img {
+        max-width: 90%;
+    }
+
+    .nav-items {
+        gap: .5em;
+    }
+
+    .delorean img {
+        margin-top: 5em;
+        margin-left: 3em;
+    }
+
+    .car-details {
+        font-size: 1em;
+    }
+
+    .own-today {
+        padding-left: .5em;
+    }
+
+    .upgrades .flux img {
+        padding: .3em 3.5em;
+    }
+
+    .upgrades .flame img {
+        padding: 0 3.5em;
+    }
+
+    .upgrades .bumper img {
+        padding: .3em 3.5em;
+    }
+
+    .upgrades .hub img {
+        padding: .2em 3.5em;
+    }
+}

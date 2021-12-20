@@ -1,0 +1,572 @@
+/* html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+} */
+
+@font-face {
+  font-family: 'Sharetech';
+  src: url(../font/ShareTechMono-Regular.ttf);
+}
+
+.container {
+  background-color: #ffffff;
+  max-width: 100%;
+  margin: 0;
+  font-family: 'Sharetech', sans-serif;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  flex: 0 3 auto;
+  justify-content: space-between;
+}
+
+.logo picture {
+  max-width: 50%;
+}
+
+.logo picture img {
+  max-width: 80%;
+}
+
+.logo .section {
+  display: flex;
+  max-width: 70%;
+}
+
+.logo span {
+  padding: 1em 2em;
+}
+
+.logo a {
+  padding: 1em;
+  text-decoration: none;
+  text-align: center;
+  color: #3a3a3a;
+  max-width: 100%;
+}
+
+.logo a:hover {
+  color: rgb(255, 255, 255);
+  background-color: #5b5c5e;
+}
+
+body {
+  background-image: url(../images/site/small_check_optimazed.jpg);
+  max-width: 100%;
+}
+
+nav {
+  margin: 0;
+  background-color: #3a3a3a;
+  color: #ffffff;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 0;
+}
+
+nav li {
+  flex: 0 1 15%;
+  display: block;
+  font-family: 'Sharetech', sans-serif;
+}
+
+nav a {
+  display: block;
+  padding: .7em .5em .7em 0;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: .8em;
+  /*-----*/
+  border-top: 1px solid rgba(191, 197, 192, 0.3);
+}
+
+nav li:first-child a {
+  border-top: none;
+}
+
+nav .active a {
+  background-color: #4c96d7;
+  color: rgb(33, 34, 33);
+}
+
+nav a:hover {
+  color: rgb(33, 34, 33);
+  background-color: #a6cbeb;
+}
+
+nav li a:active {
+  color: #4c96d7;
+  background-color: #3a3a3a;
+}
+
+/* ----------main------------ */
+.contentTitle {
+  margin: 1em 0;
+}
+
+.contentTitle h1 {
+  font-size: 2em;
+  margin: 0 0 0 .5em;
+}
+
+main .center {
+  color: red;
+  font-size: 1.5em;
+}
+
+main h2,
+p {
+  margin: 0 0 .5em 1em;
+}
+
+main p {
+  padding-left: .5em;
+}
+
+main .updatemessage {
+  margin-top: .5em;
+  margin-left: .5em;
+  font-size: 1.5em;
+  padding-left: .2em;
+  color: red;
+}
+
+main .greating {
+  margin-top: 1em;
+  font-size: 1.2em;
+  padding-left: 0;
+}
+
+main .accountManagement a {
+  margin-left: 1.5em;
+}
+
+main .inventoryManagement {
+  padding-top: 1.5em;
+}
+
+main .vehicleManagement {
+  padding: 1em 0 0 0;
+}
+
+main select {
+  margin: 0 0 1em 1.5em;
+  padding: .5em;
+  background-color: #dcdfe696;
+  border-radius: 5px;
+
+}
+
+main th {
+  padding: .5em;
+  font-size: 1.2em;
+}
+
+main td {
+  padding: 0 0 .2em .5em;
+}
+
+main tbody td:first-child {
+  padding-left: 1.5em;
+}
+
+main form .warning {
+  color: rgb(204, 5, 5);
+}
+
+.updateUser {
+  margin: 1em 0;
+}
+
+/* ----------main grid--------------------- */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  position: relative;
+}
+
+
+/* ------------delorean image------------- */
+.delorean {
+  max-width: 100%;
+  grid-column: 1 / 3;
+  grid-row: 1 / 6;
+}
+
+.delorean img {
+  max-width: 100%;
+}
+
+/* --------------details----------------- */
+.car-details {
+  color: #136bb8;
+  position: absolute;
+  font-size: .8em;
+  grid-column: 1 / 2;
+  padding-left: .5em;
+}
+
+.car-details h2 {
+  margin: 0;
+}
+
+.car-details p {
+  margin: 0;
+}
+
+/* ---------------Own today-------------  */
+.own-today {
+  max-width: 45%;
+  grid-column: 1 / 3;
+  padding-top: 1em;
+  justify-self: center;
+}
+
+.own-today img {
+  max-width: 100%;
+}
+
+/* ----------------Reviews section-------------- */
+.reviews h3 {
+  font-size: 1.5em;
+  margin-left: .5em;
+  margin-bottom: 0;
+}
+
+.reviews ul {
+  font-size: .8em;
+}
+
+.reviews li {
+  padding-bottom: 1em;
+}
+
+
+/* ----------------Upgrades section----------------- */
+.upgrades {
+  display: grid;
+  max-width: 100%;
+  margin: 0;
+  grid-template-columns: 1fr 1fr;
+}
+
+.upgrades h4 {
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
+  font-size: 1.5em;
+  margin: .5em;
+
+}
+
+.upgrade {
+  margin: 0;
+  padding-bottom: 1em;
+  text-align: center;
+}
+
+.upgrade figure {
+  margin: 0;
+}
+
+.upgrade-img {
+  padding: .5em 3.3em;
+  background-color: #4c96d7;
+  border: 2px solid #3a3a3a;
+}
+
+.upgrades .flux {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+.upgrades .flame {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+.upgrades .bumper {
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+}
+
+.upgrades .hub {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+}
+
+.flame img {
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+.hub img {
+  padding-top: .1em;
+  padding-bottom: .5em;
+}
+
+/*------------form-----------------*/
+
+.registration,
+.signin,
+.addclass,
+.addvehicle,
+.updatevehicle,
+.deletevehicle {
+  margin-left: 1em;
+  max-width: 90%;
+}
+
+.required {
+  margin-bottom: 1em;
+  font-size: 1.5em;
+}
+
+.delete {
+  color: red;
+}
+
+.select select {
+  display: block;
+  width: 90%;
+  margin: .5em auto 1em 0;
+  padding: 1em 0.3em;
+  border-radius: 5px;
+}
+
+form label {
+  margin-bottom: 1em;
+  font-size: 1.5em;
+}
+
+form input,
+textarea {
+  display: block;
+  width: 90%;
+  margin: .5em auto 1em 0;
+  padding: 1em 0.3em;
+  border-radius: 5px;
+}
+
+form p,
+span {
+  margin: 0;
+  padding: 0;
+}
+
+#regbtn,
+#updtbtn,
+#image-button {
+  max-width: 90%;
+  background-color: #4c96d7;
+  font-size: 1.5em;
+  padding: .2em;
+}
+
+.newmember {
+  padding: 2em 0 0 1em;
+}
+
+/* --------------------Footer section------------------- */
+footer {
+  border-top: 3px solid #3a3a3a;
+  text-align: center;
+}
+
+footer p {
+  margin: .2em;
+}
+
+/* image display */
+#inv-display {
+  margin: 2em;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+#inv-display li {
+  margin-bottom: 1em;
+  border: 1px rgb(179, 177, 177) solid;
+  list-style-type: none;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.966);
+  flex: 1 1 auto;
+  max-width: 300px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  position: relative;
+}
+
+#inv-display hr {
+  margin: .5em 0;
+  border: 2px solid rgb(85, 83, 83);
+}
+
+#inv-display li img {
+  max-width: 100%;
+  margin: .5em;
+}
+
+#inv-display a {
+  display: block;
+  text-decoration: none;
+  z-index: 1;
+}
+
+#inv-display a::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: '';
+}
+
+/* Vehicle Info */
+
+#vehicle-info {
+  max-width: 90%;
+  margin: auto;
+}
+
+#info-title {
+  font-size: 1.5em;
+  margin-left: .5em;
+  margin-bottom: .5em;
+}
+
+#vehicle-info img {
+  max-width: 100%;
+}
+
+#vehicle-info h2,
+#price,
+#description,
+#color,
+#stock {
+  margin: .5em 0;
+  padding: 0;
+}
+
+#price {
+  color: rgb(110, 3, 3);
+}
+
+#color {
+  color: rgb(11, 75, 11);
+}
+
+#stock {
+  color: blue;
+}
+
+/*---------Image Admin---------*/
+.image-p {
+  margin-top: .5em;
+}
+
+.image-admin {
+  margin-left: 1em;
+  max-width: 90%;
+}
+
+.image-label {
+  margin-left: .5em;
+}
+
+#invId {
+  margin: .5em;
+
+}
+
+.image-fieldset {
+  margin: 1em auto;
+}
+
+.image-fieldset label {
+  display: block;
+}
+
+
+.image-admin-area {
+  max-width: 90%;
+  margin: auto;
+}
+
+.image-admin-area ul {
+  padding: 0;
+}
+
+.image-admin-area li {
+  list-style-type: none;
+}
+
+.image-admin-area img {
+  max-width: 100%;
+}
+
+.image-admin-area ul li p {
+  margin: 0;
+  padding: 0;
+}
+
+.image-admin #yes,
+.no {
+  margin-bottom: 0;
+}
+
+.image-admin input[type="radio"] {
+  margin-bottom: 2em;
+  width: 1.15em;
+  height: 1.15em;
+}
+
+/*---------Reviews---------*/
+.reviews h2 {
+  margin-left: .5em;
+}
+
+.reviewform {
+  margin-left: 1em;
+}
+
+.oldreviews h3 {
+  margin-left: 1em;
+}
+
+.individualreview {
+  margin: 1em;
+  border: 1px solid black;
+}
+
+.individualreview p {
+  margin-left: 0;
+}
+
+.individualreview p a:first-child {
+  margin-left: 0em;
+}
+
+.individualreview p a {
+  margin-left: 1em;
+}
+
+.delete {
+  color: red;
+}
