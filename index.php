@@ -40,4 +40,3 @@ switch ($action) {
     include 'view/home.php';
     break;
 }
-// hello
