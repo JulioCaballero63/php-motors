@@ -22,21 +22,22 @@ $navList = buildNavigation($classifications);
 
 // Control structure
 $action = filter_input(INPUT_POST, 'action', FILTER_SANITIZE_STRING);
-if ($action == NULL){
- $action = filter_input(INPUT_GET, 'action', FILTER_SANITIZE_STRING);
+if ($action == NULL) {
+  $action = filter_input(INPUT_GET, 'action', FILTER_SANITIZE_STRING);
 }
 
 // Checked if the firstname cookie exists, get its value
-if(isset($_COOKIE['firstname'])) {
+if (isset($_COOKIE['firstname'])) {
   $cookieFirstname = filter_input(INPUT_COOKIE, 'firstname', FILTER_SANITIZE_STRING);
 }
 
-switch ($action){
-    case 'template':
-        include 'view/template.php';
-     break;
-    
-    default:
-     include 'view/home.php';
-     break;
-   }
+switch ($action) {
+  case 'template':
+    include 'view/template.php';
+    break;
+
+  default:
+    include 'view/home.php';
+    break;
+}
+// hello
